@@ -17,7 +17,8 @@ body {
   background-size: cover;
 }
 
-h1 ,p {
+h1,
+p {
   opacity: 0;
 
   animation-name: topdown;
@@ -113,19 +114,18 @@ main p {
 }
 
 @keyframes downtop {
-0% {
-  opacity: 0;
-  transform: translateY(55px);
-}
+  0% {
+    opacity: 0;
+    transform: translateY(55px);
+  }
 
-100% {
-  opacity: 1;
-  transform: translateY(0px);
-}
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media (max-width: 700px) {
-
   main {
     padding: 8rem 0 0 0;
   }
@@ -142,4 +142,3 @@ main p {
     flex-direction: column;
   }
 }
-
