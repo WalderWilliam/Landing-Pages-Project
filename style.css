@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url(./assets//landBackground.svg);
+  background-image: url(./assets/landBackground.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -78,7 +78,7 @@ main {
 }
 
 .travel {
-  background-image: url(./pages/travelExpert/assets/backgroundimage.svg);
+  background-image: url(./pages/travelExpert/assets/backgroundImage.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
