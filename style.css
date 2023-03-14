@@ -78,7 +78,7 @@ main {
 }
 
 .travel {
-  background-image: url(./pages/TravelExpert/assets/backgroundimage.svg);
+  background-image: url(./pages/travelExpert/assets/backgroundimage.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
