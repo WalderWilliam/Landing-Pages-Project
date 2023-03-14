@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(./assets//landBackground.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem 0 0 0;
+  font-family: 'Cinzel', serif;
+
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 8.6rem;
+  color: aliceblue;
+
+  opacity: 0;
+
+  animation-name: topdown;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  padding: 5rem 5rem;
+
+  opacity: 0;
+
+  animation-name: downtop;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.horror {
+  background-image: url(./pages/horrorGame/assets/backgroundImage.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  height: 50rem;
+  width: 30rem;
+
+  color: aliceblue;
+  border: none;
+  border-radius: 3rem;
+
+  font-family: 'Emilys Candy', cursive;
+
+  color: #ffc700;
+
+  font-weight: 400;
+  font-size: 6.4rem;
+  line-height: 8rem;
+
+  cursor: pointer;
+
+  transform: scale(1.05);
+}
+
+.travel {
+  background-image: url(./pages/TravelExpert/assets/backgroundimage.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  height: 50rem;
+  width: 30rem;
+
+  color: aliceblue;
+  border: none;
+  border-radius: 3rem;
+  font-family: 'Cinzel', serif;
+
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 8.6rem;
+  color: #151718;
+
+  cursor: pointer;
+
+  transform: scale(1.05);
+}
+
+.travel span {
+  color: #db2777;
+}
+
+.recipes {
+  background-image: url(./pages/healthyRecipes/assets/backgroundImage.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  height: 50rem;
+  width: 30rem;
+
+  color: aliceblue;
+  border: none;
+  border-radius: 3rem;
+  font-family: 'Beth Ellen', cursive;
+
+  font-weight: 400;
+  font-size: 6.4rem;
+  line-height: 12rem;
+
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.recipes span {
+  color: #5eead4;
+}
+
+.horror:hover {
+  border: 8px solid #ffc700;
+  filter: saturate(2);
+  transition: all 200ms;
+}
+
+.travel:hover {
+  border: 8px solid #db2777;
+  filter: saturate(2);
+  transition: all 200ms;
+}
+
+.recipes:hover {
+  border: 8px solid #5eead4;
+  filter: saturate(2);
+  transition: all 200ms;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(55px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 4rem;
+    margin: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .horror {
+    height: 30rem;
+  }
+
+  .travel {
+    height: 30rem;
+  }
+
+  .recipes {
+    height: 30rem;
+  }
+}

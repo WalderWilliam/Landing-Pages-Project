@@ -26,7 +26,7 @@ main {
 
   opacity: 0;
 
-  animation-name: topdown;
+  animation-name: leftright;
   animation-duration: 2s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
@@ -68,7 +68,7 @@ main {
 
   opacity: 0;
 
-  animation-name: downtop;
+  animation-name: rightleft;
   animation-duration: 2s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
@@ -112,27 +112,27 @@ main {
   background: #ffd53f;
 }
 
-@keyframes topdown {
-    0% {
-      opacity: 0;
-      transform: translateY(-25px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-}
-
-@keyframes downtop {
+@keyframes leftright {
   0% {
     opacity: 0;
-    transform: translateY(55px);
+    transform: translateX(-25px);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rightleft {
+  0% {
+    opacity: 0;
+    transform: translateX(55px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
@@ -152,7 +152,7 @@ main {
 
   .readMore {
     font-size: 1.5rem;
-  
+
     width: 24rem;
     height: 7rem;
   }
@@ -160,7 +160,7 @@ main {
   .play {
     width: 15rem;
     height: 4.5rem;
-  
+
     font-weight: 700;
     font-size: 1.5rem;
   }

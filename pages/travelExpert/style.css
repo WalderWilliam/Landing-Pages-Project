@@ -21,7 +21,7 @@ h1,
 p {
   opacity: 0;
 
-  animation-name: topdown;
+  animation-name: rightleft;
   animation-duration: 2s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
@@ -101,15 +101,15 @@ main p {
   background: #e64d92;
 }
 
-@keyframes topdown {
+@keyframes rightleft {
   0% {
     opacity: 0;
-    transform: translateY(-25px);
+    transform: translateX(-25px);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
