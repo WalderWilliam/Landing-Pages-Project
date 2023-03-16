@@ -93,6 +93,37 @@ main p {
   cursor: pointer;
 }
 
+footer button {
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+
+  padding: 1.2rem 3.2rem;
+  gap: 0.8rem;
+
+  width: 24rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 80px;
+
+  background: #db2777;
+  color: white;
+
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
 .readMore:hover {
   color: #db2777;
 }
@@ -100,6 +131,8 @@ main p {
 .travel:hover {
   background: #e64d92;
 }
+
+
 
 @keyframes rightleft {
   0% {
@@ -122,6 +155,16 @@ main p {
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
